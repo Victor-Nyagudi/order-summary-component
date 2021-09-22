@@ -33,10 +33,8 @@ I've included two screenshots in the `\screenshots` folder: one for mobile, and 
 
 ### Links
 
-I'll update this README once I've updated these links. They're just placeholders for now.
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/mobilefirst-solution-using-bem-naming-convention-Oq6YFDtuU)
+- Live Site URL: [Add live site URL here](https://victor-nyagudi.github.io/order-summary-component/)
 
 ## My process
 
