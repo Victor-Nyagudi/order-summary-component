@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h2, h5, p {
+  margin: 0;
+}
+
+.screen-reader-only {
+  position: absolute;
+  left: -10000px;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #7280a7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
+}
+
+h2 {
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+.container {
+  width: 87%;
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header {
+  border-radius: 15px 15px 0 0;
+  background-color: white;
+}
+
+.header__image {
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.order-summary-component {
+  background-color: white;
+  padding: 1.2em 0 1em;
+  border-radius: 0 0 15px 15px;
+  -webkit-box-shadow: 0 20px 25px 1px #c2ceff;
+          box-shadow: 0 20px 25px 1px #c2ceff;
+}
+
+.order-summary-component .secondary-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.order-summary-component .secondary-container .order-summary {
+  text-align: center;
+}
+
+.order-summary-component .secondary-container .order-summary__title {
+  margin-bottom: .5em;
+}
+
+.order-summary-component .secondary-container .order-summary__text {
+  font-size: .95rem;
+  color: #7280a7;
+}
+
+.order-summary-component .secondary-container .subscription-plan {
+  background-color: #f5f7ff;
+  border-radius: 9px;
+  margin: 1.5em 0;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: .95rem;
+}
+
+.order-summary-component .secondary-container .subscription-plan .music-icon-and-sub-plan {
+  gap: 1em;
+  width: 60%;
+}
+
+.order-summary-component .secondary-container .subscription-plan__text {
+  font-size: .85rem;
+  -webkit-box-flex: 5;
+      -ms-flex-positive: 5;
+          flex-grow: 5;
+}
+
+.order-summary-component .secondary-container .subscription-plan__title {
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.order-summary-component .secondary-container .subscription-plan__change-option {
+  font-size: .8rem;
+  width: 20%;
+}
+
+.order-summary-component .secondary-container .order-confirmation__button {
+  font-family: inherit;
+  font-size: .90rem;
+  font-weight: inherit;
+  color: #7280a7;
+  width: 100%;
+  border-radius: 9px;
+  border: none;
+  background-color: white;
+  padding: 1em 3.6em;
+}
+
+.order-summary-component .secondary-container .order-confirmation__button:hover {
+  cursor: pointer;
+}
+
+.order-summary-component .secondary-container .order-confirmation__button--proceed {
+  color: #f5f7ff;
+  background-color: #3829e0;
+  -webkit-box-shadow: 0 10px 30px 1px #e0e8ff;
+          box-shadow: 0 10px 30px 1px #e0e8ff;
+  margin-bottom: .4em;
+}
+
+.order-summary-component .secondary-container .order-confirmation__button--proceed:hover {
+  background-color: #756be6;
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+}
+/*# sourceMappingURL=main.css.map */
