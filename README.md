@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/order-summary-card-desktop.png)
+![](./dist/screenshots/order-summary-card-desktop.png)
 
 I've included two screenshots in the `\screenshots` folder: one for mobile, and one for desktp. 
 
