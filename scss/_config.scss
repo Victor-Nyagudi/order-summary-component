@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+$body-font: 'Red Hat Display', sans-serif;
+$font-weights: ("medium": 500, "bold": 700, "black":900);
+
+$colors: (
+    "pale-blue": hsl(225, 100%, 94%), 
+    "bright-blue": hsl(245, 75%, 52%),
+    "very-pale-blue": hsl(225, 100%, 98%),
+    "desaturated-blue": hsl(224, 23%, 55%),
+    "dark-blue": hsl(223, 47%, 23%)        
+); 
+
+$border-radius: 15px;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h5, p { margin: 0; }
+
+.screen-reader-only {
+    position: absolute;
+    left: -10000px;
+    
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+@mixin media-lg {
+    @media (min-width: 900px) {
+        @content;
+    }
+}
+
+@function getFontWeight($weight) {
+    @return map-get($map: $font-weights, $key: $weight);
+}
+
+@function getColor($color) {
+    @return map-get($map: $colors, $key: $color);
+}
