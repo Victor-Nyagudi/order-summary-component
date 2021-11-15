@@ -1,0 +1,129 @@
+@import './config';
+
+body {
+    font-family: $body-font;
+    font-size: 1rem;
+    font-weight: getFontWeight('bold');
+
+    line-height: 1.7;
+    color: getColor('desaturated-blue');
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    margin: 0;
+    height: 100vh;
+}
+
+h2 {
+    font-weight: getFontWeight('black');
+    color: getColor('dark-blue');
+}
+
+h3 { font-weight: getFontWeight('bold'); }
+
+.container {
+    width: 87%;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.row { display: flex; }
+
+.header {
+    border-radius: $border-radius $border-radius 0 0;    
+    background-color: white;
+
+    &__image {
+        max-width: 100%;
+        border-radius: $border-radius $border-radius 0 0;
+    }
+}
+
+.order-summary-component {
+    background-color: white;
+    padding: 1.2em 0 1em;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 20px 25px 1px hsl(228, 100%, 88%);
+
+    .secondary-container {
+        width: 80%;
+        margin: 0 auto;
+
+        .order-summary {
+            text-align: center;
+
+            &__title { margin-bottom: .5em; }
+
+            &__text {
+                font-size: .95rem;
+                color: getColor('desaturated-blue');
+            }
+        }
+
+        .subscription-plan {
+            background-color: getColor('very-pale-blue');
+            border-radius: 9px;
+            
+            margin: 1.5em 0;
+            padding: 1em;
+
+            justify-content: space-between;
+            align-items: center;
+            font-size: .95rem;
+
+            .music-icon-and-sub-plan {
+                gap: 1em;
+                width: 60%;
+            }
+
+            &__text {
+                font-size: .85rem;
+                flex-grow: 5;
+            }
+
+            &__title {
+                color: getColor('dark-blue');
+                font-weight: getFontWeight('black');
+            }
+
+            &__change-option {
+                font-size: .8rem;
+                width: 20%;
+            }
+        }
+
+        .order-confirmation__button {
+            font-family: inherit;
+            font-size: .90rem;
+            font-weight: inherit;
+            color: getColor('desaturated-blue');
+
+            width: 100%;
+            border-radius: 9px;
+            border: none;
+            
+            background-color: white;
+            padding: 1em 3.6em;
+
+            &:hover { cursor: pointer; }
+
+            &--proceed {
+                color: getColor('very-pale-blue');
+                background-color: $bright-blue;
+
+                box-shadow: 0 10px 30px 1px getColor('pale-blue');
+                margin-bottom: .4em;
+
+                &:hover { background-color: hsl(245, 71%, 66%); }
+            }
+        }
+    }
+}
+
+@import './responsive';
