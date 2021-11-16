@@ -48,7 +48,7 @@ so not much extra work was needed to get things to where I wanted them to be.
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- SCSS
 - Flexbox
 - Google Fonts
 
